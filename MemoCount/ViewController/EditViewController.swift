@@ -10,21 +10,13 @@ import UIKit
 class EditViewController: UIViewController {
 
     @IBOutlet weak var memoTextView: UITextView!
-    
+    var selectedRow: Int!
+    var selectedMemo : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Foundation.UserDefaults.standard.object(forKey: "MemoArray" + memoNo) != nil {
-            MemoArray = Foundation.UserDefaults.standard.object(forKey: "MemoArray" + memoNo) as! [String]
-                
-            
-            memoTextView.text = "\(MemoArray)"
+            memoTextView.text = selectedMemo
             }
 
         
     }
-    
 
-  
-
-}

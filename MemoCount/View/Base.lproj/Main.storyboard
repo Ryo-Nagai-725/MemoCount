@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqO-fc-8cp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqO-fc-8cp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -185,49 +185,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttz-Jr-NpX">
-                                <rect key="frame" x="20" y="122" width="122" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タイトル名を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ynF-Y9-qC5">
-                                <rect key="frame" x="20" y="201" width="374" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Up-2D-01T">
-                                <rect key="frame" x="20" y="356" width="374" height="492"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Up-2D-01T">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-1C-njg">
-                                <rect key="frame" x="20" y="274" width="61" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fi1-P3-WQ5"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
-                        <constraints>
-                            <constraint firstItem="ynF-Y9-qC5" firstAttribute="top" secondItem="Ttz-Jr-NpX" secondAttribute="bottom" constant="43" id="79b-wT-dpe"/>
-                            <constraint firstItem="Ttz-Jr-NpX" firstAttribute="leading" secondItem="3Up-2D-01T" secondAttribute="leading" id="C8e-tq-34B"/>
-                            <constraint firstItem="3Up-2D-01T" firstAttribute="trailing" secondItem="ynF-Y9-qC5" secondAttribute="trailing" id="EgG-W5-9bx"/>
-                            <constraint firstItem="Ttz-Jr-NpX" firstAttribute="top" secondItem="fi1-P3-WQ5" secondAttribute="top" constant="34" id="GbZ-iT-iwf"/>
-                            <constraint firstItem="Ttz-Jr-NpX" firstAttribute="leading" secondItem="ynF-Y9-qC5" secondAttribute="leading" id="Oec-nN-HOc"/>
-                            <constraint firstItem="3Up-2D-01T" firstAttribute="trailing" secondItem="UiW-zp-s8c" secondAttribute="trailingMargin" id="QZK-Jd-JRz"/>
-                            <constraint firstItem="fi1-P3-WQ5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ttz-Jr-NpX" secondAttribute="trailing" symbolic="YES" id="aMC-9K-2xr"/>
-                            <constraint firstItem="Ttz-Jr-NpX" firstAttribute="leading" secondItem="pqy-1C-njg" secondAttribute="leading" id="j40-oo-H4V"/>
-                            <constraint firstItem="fi1-P3-WQ5" firstAttribute="bottom" secondItem="3Up-2D-01T" secondAttribute="bottom" constant="14" id="nNS-jc-oso"/>
-                            <constraint firstItem="Ttz-Jr-NpX" firstAttribute="leading" secondItem="UiW-zp-s8c" secondAttribute="leadingMargin" id="oYV-Pi-Xw9"/>
-                            <constraint firstItem="pqy-1C-njg" firstAttribute="top" secondItem="ynF-Y9-qC5" secondAttribute="bottom" constant="39" id="omO-kH-GhD"/>
-                            <constraint firstItem="fi1-P3-WQ5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pqy-1C-njg" secondAttribute="trailing" symbolic="YES" id="ppf-kq-uqW"/>
-                            <constraint firstItem="3Up-2D-01T" firstAttribute="top" secondItem="pqy-1C-njg" secondAttribute="bottom" constant="46" id="tjU-Vx-VRG"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DkZ-ws-WcG">
                         <barButtonItem key="rightBarButtonItem" title="保存" id="3hU-eA-Hri">
@@ -238,12 +206,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="contentsTextView" destination="3Up-2D-01T" id="okx-hb-j5P"/>
-                        <outlet property="titleTextFiled" destination="ynF-Y9-qC5" id="uNU-b4-GH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bby-l7-jpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-403"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="-403.125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f1j-32-sbZ">
